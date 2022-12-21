@@ -1,0 +1,171 @@
+body{
+    width: 450px; 
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body, 
+.end-box, 
+.dog-img{
+     margin: 0 auto;
+}
+
+body, 
+.header, 
+.dog-img, 
+.footer, 
+.circle-cross, 
+.circle-heart,
+.end-box {
+    display: flex;
+}
+
+body,
+.end-box{
+    flex-direction: column;
+}
+
+.container{
+    background: linear-gradient(180deg, #FFFFFF 0%, #F6F7FB 100%);
+}
+
+.header,
+.circle-cross, 
+.circle-heart,
+.footer{
+    align-items: center;
+}
+
+.icon-img,
+.circle-cross, 
+.circle-heart {
+    cursor: pointer;
+}
+
+.reaction-liked, 
+.reaction-notLike,
+.dog-details{
+    position: absolute;
+    left: 20px;
+}
+/**** HEADER ****/
+.header{
+    height: 75px;
+    justify-content: space-between;
+    padding: 0px 15px;
+}
+
+.icon-img {
+    width: 34px;
+    height: 34px;
+}
+
+.logo-img{
+    width:84px; 
+    height: 42px;
+}
+
+/*** DOG PROFILE ****/
+.dog-card{
+    position: relative;
+}
+
+.dog-img{
+    width: 98%;
+    height: 600px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.reaction-liked, .reaction-notLiked{
+    top: 40px;
+    width: 180px;
+    height: 100px;
+    border-radius: 10.5px;
+    transform: rotate(-30deg);
+}
+
+.dog-details{
+    bottom: 15px;
+    width: 88%;
+    background-color: black;
+    padding: 5px 10px;
+    border-radius: 12px;
+    opacity: 0.8
+}
+
+.dog-name-age{
+    color: #f8f8f8;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.dog-bio {
+    color: #b7b7b7;
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
+.dog-name-age,
+.dog-bio{
+    margin: 0;  
+}
+/**** FOOTER ****/
+
+.footer{
+    height: 110px;
+}
+
+.circle-cross, .circle-heart{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 12px;
+    background-color: #ffffff;
+    box-shadow: 0px 10px 20px #E9E9EA;
+}
+
+.circle-cross:hover{
+    background-color: #FFE7EF;
+}
+
+.circle-heart:hover{
+    background-color: #DBFFF4;
+}
+
+.icon-cross{
+    width: 1.75rem;
+}
+
+.icon-heart{
+    width: 2rem;
+}
+
+.footer,
+.circle-cross, 
+.circle-heart,
+.end-box{
+     justify-content: center;   
+}
+/**** END BOX ****/
+.end-box{
+    height: 500px;
+    width: 350px;
+    padding: 0 40px;
+    align-items: center;
+    text-align: center;
+    background-color: #DBFFF4;
+    border-radius: 10px;
+    color: darkgray;
+    text-shadow: 0px 0px 0px pink;
+}
+
+.end-pic{
+    width: 50px;
+}
+
+
+.hidden{
+    display: none;
+}
